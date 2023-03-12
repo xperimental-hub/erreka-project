@@ -14,7 +14,7 @@ void ATSVHUD::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	if (PlayScreenClass)
+	/*if (PlayScreenClass)
 	{
 		PlayScreen = CreateWidget<UPlayScreen>(GetWorld(), PlayScreenClass);
 		if (PlayScreen)
@@ -23,8 +23,8 @@ void ATSVHUD::BeginPlay()
 			APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
 			PlayerController->bShowMouseCursor = true;
 		}
-	}
-	/*
+	}*/
+	
 	if (MainScreenClass)
 	{
 		MainScreen = CreateWidget<UMainScreen>(GetWorld(),MainScreenClass);
@@ -35,7 +35,7 @@ void ATSVHUD::BeginPlay()
 			PlayerController->bShowMouseCursor = true;
 		}
 	}
-	*/
+	
 		
 }
 
